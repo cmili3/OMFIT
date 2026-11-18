@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OMFIT | Entrenamiento personal con más de 30 años de experiencia</title>
+  <meta name="description" content="OMFIT: entrenamiento personalizado, planes, rehabilitación y salidas grupales con Omar. Entrená con propósito y a tu ritmo.">
+  <meta name="theme-color" content="#101C2B">
+  <link rel="icon" href="assets/logo.png">
+
+  <!-- Tipografías: Rajdhani (UI), Barlow Condensed (títulos), Montserrat (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Montserrat:wght@400;500;600&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="inicio">
+    <!-- Reemplazá assets/hero.mp4 por tu video con el logo -->
+    <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="assets/logo.png" aria-hidden="true">
+      <source src="assets/hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+      <h1 class="hero__brand">OMFIT</h1>
+      <p class="hero__sub">Entrená con propósito, a tu ritmo y con el acompañamiento de más de 30 años de experiencia.</p>
+      <a class="btn btn--primary" href="#entrenador">Quiero saber más</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ CONOCÉ A TU ENTRENADOR ============ -->
+    <section class="section trainer" id="entrenador">
+      <div class="container">
+        <h2 class="section__title reveal">Conocé a tu entrenador</h2>
+
+        <div class="trainer__grid">
+          <figure class="trainer__photo reveal">
+            <!-- Reemplazá assets/omar.jpg por la foto de Omar -->
+            <img src="assets/omar.jpg" alt="Omar, entrenador personal de OMFIT" width="640" height="800" loading="lazy">
+          </figure>
+
+          <div class="trainer__text reveal">
+            <p class="lead">Hola, soy Omar. Desde hace más de 30 años me dedico a acompañar a personas de todas las edades en el camino de transformar su cuerpo, su salud y su calidad de vida a través del entrenamiento. A lo largo de este tiempo, he tenido el privilegio de trabajar con quienes pisan un gimnasio por primera vez, hasta atletas que buscan alcanzar su máximo rendimiento.</p>
+            <p>Especialista en entrenamiento de musculación, acondicionamiento general y programas de rehabilitación. Diseño rutinas adaptadas a tus necesidades, tiempos y objetivos.</p>
+            <p class="commit">Mi compromiso: ofrecerte un acompañamiento cercano, profesional y efectivo.</p>
+          </div>
+        </div>
+
+        <!-- Dato de autoridad -->
+        <div class="badge reveal" aria-label="Más de 30 años de experiencia">
+          <span class="badge__num">+ 30</span>
+          <span class="badge__label">años de experiencia</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BANNER MOTIVACIONAL ============ -->
+    <!-- Fondo: assets/banner.jpg (se define en styles.css) -->
+    <section class="quote" aria-label="Filosofía de entrenamiento">
+      <blockquote class="quote__text reveal">
+        Creo que el verdadero progreso no solo se mide en los kilos levantados o en los centímetros perdidos, sino en cómo te sentís cada día: más fuerte, más ágil, más vital. El primer paso es confiar en vos. El segundo, es trabajar juntos para lograrlo.
+      </blockquote>
+    </section>
+
+    <!-- ============ MODALIDADES ============ -->
+    <section class="section modes" id="modalidades">
+      <div class="container">
+        <h2 class="section__title reveal">Encontrá tu forma de entrenar</h2>
+
+        <!-- Carrusel con scroll-snap en móvil, 4 columnas en escritorio -->
+        <div class="cards" role="list">
+
+          <article class="card reveal" role="listitem">
+            <svg class="card__art" viewBox="0 0 200 100" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+              <path d="M5 90 C 60 90, 70 15, 195 12"/><path d="M5 78 C 55 78, 75 28, 195 26" opacity=".45"/>
+            </svg>
+            <p class="card__cat">01 / Personal</p>
+            <p class="card__concept">Fuerza con propósito</p>
+            <h3 class="card__title">Entrenamiento personalizado</h3>
+            <p class="card__desc">Acompañamiento cercano y planificación según tus necesidades, tus tiempos y tus objetivos.</p>
+          </article>
+
+          <article class="card reveal" role="listitem">
+            <svg class="card__art" viewBox="0 0 200 100" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+              <path d="M40 85 L70 15 L185 15 L155 85 Z" opacity=".9"/><path d="M55 85 L85 28" opacity=".4"/>
+            </svg>
+            <p class="card__cat">02 / Planificación</p>
+            <p class="card__concept">Constancia y dirección</p>
+            <h3 class="card__title">Planes de entrenamiento</h3>
+            <p class="card__desc">Rutinas diseñadas para que puedas entrenar con claridad, estructura y continuidad.</p>
+          </article>
+
+          <article class="card reveal" role="listitem">
+            <svg class="card__art" viewBox="0 0 200 100" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+              <circle cx="100" cy="50" r="46"/><circle cx="100" cy="50" r="32" opacity=".7"/><circle cx="100" cy="50" r="18" opacity=".45"/><circle cx="100" cy="50" r="6" opacity=".3"/>
+            </svg>
+            <p class="card__cat">03 / Acondicionamiento</p>
+            <p class="card__concept">Movimiento progresivo</p>
+            <h3 class="card__title">Rehabilitaciones</h3>
+            <p class="card__desc">Trabajo físico adaptado a cada situación, dentro del alcance de la formación profesional de Omar.</p>
+          </article>
+
+          <article class="card reveal" role="listitem">
+            <svg class="card__art" viewBox="0 0 200 100" aria-hidden="true">
+              <defs><radialGradient id="halo"><stop offset="0" stop-color="#62E6EB" stop-opacity=".55"/><stop offset="1" stop-color="#62E6EB" stop-opacity="0"/></radialGradient></defs>
+              <circle cx="100" cy="50" r="48" fill="url(#halo)"/><circle cx="100" cy="50" r="14" fill="none" stroke="currentColor" stroke-width="1.2"/>
+            </svg>
+            <p class="card__cat">04 / Grupal</p>
+            <p class="card__concept">En movimiento juntos</p>
+            <h3 class="card__title">Salidas grupales</h3>
+            <p class="card__desc">Compartir actividad, movimiento y aire libre también es parte de una vida activa.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ENTRENÁ A TU MANERA ============ -->
+    <section class="section ways" id="modalidad">
+      <div class="container">
+        <h2 class="section__title reveal">Entrená a tu manera</h2>
+
+        <div class="ways__list">
+          <article class="way reveal">
+            <h3 class="way__title">En el gimnasio</h3>
+            <p class="way__desc">Entrenamientos presenciales con corrección técnica y seguimiento en cada sesión.</p>
+          </article>
+          <article class="way reveal">
+            <h3 class="way__title">En tu espacio</h3>
+            <p class="way__desc">Rutinas adaptadas al lugar y los materiales que tenés, para entrenar donde te sea más cómodo.</p>
+          </article>
+          <article class="way reveal">
+            <h3 class="way__title">Online <small>(solo rutinas)</small></h3>
+            <p class="way__desc">Recibí tu plan de entrenamiento y seguilo a tu ritmo, estés donde estés.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CIERRE / CTA FINAL ============ -->
+    <section class="closing" id="contacto">
+      <div class="container closing__inner reveal">
+        <h2 class="closing__title">Empezá a moverte x vos</h2>
+        <div class="closing__actions">
+          <!-- CAMBIAR: número en formato internacional sin "+" ni espacios -->
+          <a class="btn btn--primary" href="https://wa.me/5492610000000?text=Hola%20Omar%2C%20quiero%20saber%20m%C3%A1s%20sobre%20OMFIT" target="_blank" rel="noopener">Escribime por WhatsApp</a>
+          <!-- CAMBIAR: usuario de Instagram -->
+          <a class="btn btn--ghost" href="https://instagram.com/omfit" target="_blank" rel="noopener">Seguime en Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="footer__brand" href="#inicio" aria-label="OMFIT, volver al inicio">OMFIT</a>
+      <nav class="footer__links" aria-label="Enlaces rápidos">
+        <a href="#entrenador">Entrenador</a>
+        <a href="#modalidades">Modalidades</a>
+        <a href="#modalidad">Entrená a tu manera</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="footer__social">
+        <a href="https://instagram.com/omfit" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>
+        </a>
+        <a href="https://wa.me/5492610000000" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21l1.6-4.6A8.5 8.5 0 1 1 8 19.5L3 21z"/><path d="M9 9c0 3 3 6 6 6l1.2-1.4-2-1-.9.7c-.8-.4-1.6-1.2-2-2l.7-.9-1-2L9 9z"/></svg>
+        </a>
+      </div>
+    </div>
+    <p class="footer__copy">© <span id="year">2026</span> OMFIT. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
